@@ -112,3 +112,7 @@ categorical attribute:
 		Peru -> 39<br />
 		Hong -> 40<br />
 		Holand-Netherlands -> 41<br />
+ - Income:<br />
+		<= 50K -> 0
+		>50K -> 1
+		
