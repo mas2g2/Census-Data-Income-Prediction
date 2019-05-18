@@ -1,3 +1,4 @@
+# Predicting-House-Income-with-Decision-Trees
 The Dataset that will be used for this project is known as the Census Income Dataset.
 In this project, information from the Census Income Dataset is used to predict the
 income of a family living in the United States using attributes such as age, occupation, fnlwgt, ect.
@@ -18,4 +19,3 @@ categorical attribute:
 		Some college -> 2
 		11th -> 3
 		
-# Predicting-House-Income-with-Decision-Trees
