@@ -5,17 +5,17 @@ income of a family living in the United States using attributes such as age, occ
 For catergorical attributes, I will have the following values corresponding to each
 categorical attribute:
 
- - working-class:
-		Private -> 1
-		Sel-emp-not-inc -> 2
-		Self-emp-inc -> 3
-		Federal-gov -> 4
-		Local-gov -> 5
-		State-gov -> 6
-		Without-pay -> 7
-		Never-worked -> 8
+ - working-class:<br />
+		Private -> 1 <br />
+		Sel-emp-not-inc -> 2 <br />
+		Self-emp-inc -> 3 <br />
+		Federal-gov -> 4 <br />
+		Local-gov -> 5<br />
+		State-gov -> 6<br />
+		Without-pay -> 7<br />
+		Never-worked -> 8<br />
  - education:
-		Bachelors -> 1
-		Some college -> 2
-		11th -> 3
+		Bachelors -> 1<br />
+		Some college -> 2<br />
+		11th -> 3<br />
 		
