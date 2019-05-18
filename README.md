@@ -53,6 +53,14 @@ categorical attribute:
 		Transport-moving -> 11<br />
 		Priv-house-serv -> 12<br />
 		Armed-Forces -> 13 <br />
+		Protective-serv ->14<br />
+ - relationship:<br />
+		Wife -> 1<br />
+		Own-child -> 2<br />
+		Husband -> 3<br />
+		Not-in-family -> 4<br />
+		Other-relative -> 5<br />
+		Unmarried -> 6<br />
  - race:<br />
 		White -> 1<br />
 		Asian-Pac-Islander -> 2<br />
