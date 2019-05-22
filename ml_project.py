@@ -22,7 +22,7 @@ first_half = data[:half,:]
 
 second_half = data[half:,:]
 
-
+# Calculate the Gini index for a split dataset
 def gini_index(groups,classes):
     # Count all samples at split point
     n = float(sum([len(group) for group in groups]))
@@ -42,7 +42,31 @@ def gini_index(groups,classes):
         gini += (1.0 - score) * (size/n)
     return gini
 
+# Split a dataset based on an attribute and an attribute value
+def test_split(index, value, dataset):
+    left, right = list(), list()
+    for row in dataset:
+        if row[index] < value:
+            left.append(row)
+        else:
+            right.append(row)
+    return left, right
+
+# Select the best split point for a dataset
+def get_split(dataset):
+    class_values = list(set(row[-1] for row in dataset))
+    b_index, b_values, b_score, b_groups = 999, 999, 999, None
+    for index in range(len(dataset) - 1):
+        for row in dataset:
+            groups = test_split(index, row[index], dataset)
+            gini = gini_index(groups, class_values)
+            if gini < b_score:
+                b_index, b_value, b_score, b_groups = index, row[index], gini, groups
+            print("{'index':",b_index,", 'value':",b_value,", 'groups':",b_groups,"}")
+    return {'index':b_index, 'value':b_value, 'groups':b_groups}
+
 groups = [first_half,second_half]
 classes = [" >50K"," <=50K"]
 gini = gini_index(groups,classes)
 print("Gini score: ",gini)
+print("Split : ",get_split(data))
